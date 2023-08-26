@@ -1,4 +1,5 @@
 let sour = document.getElementById('sour');
+let olivia=document.getElementById('olivia');
 
 window.addEventListener('scroll',()=>{
     let value=window.scrollY

@@ -1,151 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 body {
-    background: linear-gradient(#040228 0%,#022af0 40%);
-    min-height:100vh;
-    overflow-x: hidden;
-    
-    
+  background: linear-gradient(#040228 0%, #022af0 40%);
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 header {
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  font-size: 20px;
 }
-
 
 .logo {
-color:#020202;
-font-size: 30px;
-cursor: default;
+  color: #020202;
+  font-size: 50px;
+  cursor: default;
 }
-
 
 #sour {
-    width: 40%;
-    height: 40%;
-
+  width: 40%;
+  height: 40%;
 }
-
 
 .navbar a {
-    color:#030303;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight:600px;
-    padding: 6px 15px;
-    border-radius: 20px;
+  color: #030303;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600px;
+  padding: 6px 15px;
+  border-radius: 20px;
 }
-.navbar a:hover , .navbar a.active 
-{
-    background: #fbfafa;
+.navbar a:hover,
+.navbar a.active {
+  background: #fbfafa;
 }
-.parallax{
-    position:relative;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    height:100vh; 
-    
-}
-.parallax img{
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    pointer-events: none;
- }
-
-
-
- .sec {
-    position: relative;
-    padding: 100px;
-    background: #040228;
- }
- 
-.sec h2{
-    font-size: 3em;
-    color:#fffefe;
-    margin: bottom 10px; 
-} 
-
-.sec h2:nth-child(2){
-    font-size: 2em;
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: -10;
+  background-image: url("./olivia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.sec p{
-    font-size: 1em;
-    color: #fff;
-    font-weight: 300;
+
+
+.parallax1 {
+  margin: auto;
+  position: relative;
+  left: 500x;
+  top: 270px;
+  width: 550px;
+  height: 80px;
+  color: rgb(247, 246, 246);
+  text-align: center;
+  font-size: 70px;
+  font-kerning: 200px;
 }
 
+.parallax img {
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+}
+
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #040228;
+}
+
+.sec h2 {
+  font-size: 3em;
+  color: #fffefe;
+  margin: bottom 10px;
+}
+
+.sec h2:nth-child(2) {
+  font-size: 2em;
+}
+
+.sec p {
+  font-size: 2em;
+  color: #fff;
+  font-weight: 300;
+}
 
 .sec2 {
-    position: relative;
-    padding: 100px;
-    background: #040228;
- }
- 
-.sec h2{
-    font-size: 3em;
-    color:#fffefe;
-    margin: bottom 10px; 
-} 
-
-.sec2 h2:nth-child(2){
-    font-size: 2em;
+  position: relative;
+  padding: 100px;
+  background: #040228;
 }
 
-.sec2 p{
-    font-size: 1em;
-    color: #fff;
-    font-weight: 300;
+.sec h2 {
+  font-size: 6em;
+  color: #fffefe;
+  margin: bottom 10px;
+}
+
+.sec2 h2:nth-child(2) {
+  font-size: 4em;
+}
+
+.sec2 p {
+  font-size: 5em;
+  color: #fff;
+  font-weight: 300;
 }
 /* Style the container */
 .image-container {
-    position: relative;
-    display:10px; /* Makes the container fit the image size */
+  position: relative;
+  display: 10px; /* Makes the container fit the image size */
 }
 
 /* Style the image */
 .image-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  right: 700px;
 }
 
 /* Style the text overlay */
 .text-overlay {
-    position: absolute;
-    top: 800px; /* Position at the top of the image */
-    right:50px; /* Position at the right side of the image */
-    left: 1000px;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
-    padding: 10px 20px;
-    border-radius: 10px; /* Creates rounded corners */
-    color: #fff; /* Text color */
-    font-family: 'Poppins', sans-serif; /* Modern font */
+  position: absolute;
+  top: 1200px; /* Position at the top of the image */
+  right: px; /* Position at the right side of the image */
+  left: 1500px;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+  padding: 10px 20px;
+  border-radius: 10px; /* Creates rounded corners */
+  color: #fff; /* Text color */
+  font-family: "Poppins", sans-serif; /* Modern font */
+  font-size: 30px;
 }
 
 /* Style the text within the overlay */
 .text-overlay p {
-    margin: 0;
+  margin: 5px;
+}
+.parallaxx{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: -10;
+  background-image: url("./olivia 2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
+.parallaxxx{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: -10;
+  background-image: url("./olivia 3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
+.parallaxxxx{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: -10;
+  background-image: url("./olivia 4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
