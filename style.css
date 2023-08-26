@@ -8,13 +8,15 @@
 
 }
 body {
-    background: linear-gradient(#040228 0%,#010101 40%);
+    background: linear-gradient(#040228 0%,#022af0 40%);
     min-height:100vh;
     overflow-x: hidden;
+    
+    
 }
 
 header {
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -26,14 +28,23 @@ header {
     font-size: 20px;
 }
 
+
 .logo {
-color:#fff;
-font-size: 50px;
+color:#020202;
+font-size: 30px;
 cursor: default;
 }
 
+
+#sour {
+    width: 40%;
+    height: 40%;
+
+}
+
+
 .navbar a {
-    color:#fff;
+    color:#030303;
     text-decoration: none;
     margin-left: 20px;
     font-weight:600px;
@@ -42,22 +53,99 @@ cursor: default;
 }
 .navbar a:hover , .navbar a.active 
 {
-    background: #00a3b9;
+    background: #fbfafa;
 }
 .parallax{
     position:relative;
     display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content:center;
     align-items: center;
     height:100vh; 
+    
 }
-.parallax img {
+.parallax img{
     position: absolute;
     top:0;
     left:0;
     width: 100%;
     pointer-events: none;
- 
  }
+
+
+
+ .sec {
+    position: relative;
+    padding: 100px;
+    background: #040228;
+ }
+ 
+.sec h2{
+    font-size: 3em;
+    color:#fffefe;
+    margin: bottom 10px; 
+} 
+
+.sec h2:nth-child(2){
+    font-size: 2em;
+}
+
+.sec p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+.sec2 {
+    position: relative;
+    padding: 100px;
+    background: #040228;
+ }
+ 
+.sec h2{
+    font-size: 3em;
+    color:#fffefe;
+    margin: bottom 10px; 
+} 
+
+.sec2 h2:nth-child(2){
+    font-size: 2em;
+}
+
+.sec2 p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+/* Style the container */
+.image-container {
+    position: relative;
+    display:10px; /* Makes the container fit the image size */
+}
+
+/* Style the image */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Style the text overlay */
+.text-overlay {
+    position: absolute;
+    top: 800px; /* Position at the top of the image */
+    right:50px; /* Position at the right side of the image */
+    left: 1000px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+    padding: 10px 20px;
+    border-radius: 10px; /* Creates rounded corners */
+    color: #fff; /* Text color */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+/* Style the text within the overlay */
+.text-overlay p {
+    margin: 0;
+}
+
+

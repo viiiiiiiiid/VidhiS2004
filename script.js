@@ -1,3 +1,9 @@
-let dubaiText = document.getElementById('dubaitext');
-let burjkhalifa = document.getElementById('burjkhalifa');
-let stars = document.getElementById('stars');
+let sour = document.getElementById('sour');
+
+window.addEventListener('scroll',()=>{
+    let value=window.scrollY
+
+    sour.style.left= value * 2+'px'
+
+})
+
